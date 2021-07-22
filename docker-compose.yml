@@ -13,7 +13,7 @@ services:
     image: postgres
     container_name: DB
     volumes:
-          - /private/var/lib/postgresql:/var/lib/postgresql
+          - ./private/var/lib/postgresql:/var/lib/postgresql
     ports:
       - "5432:5432"
     restart: always
