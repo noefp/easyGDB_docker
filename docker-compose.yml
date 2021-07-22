@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  easy_gdb:
+    container_name: easy_gdb
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/var/www/html
+  DB:
+    image: postgres
+    container_name: DB
+    volumes:
+          - /private/var/lib/postgresql:/var/lib/postgresql
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=1234
