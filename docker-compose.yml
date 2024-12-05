@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   easy_gdb:
     container_name: easy_gdb
