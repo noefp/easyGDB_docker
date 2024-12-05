@@ -22,11 +22,9 @@ RUN cpanm DBI
 RUN cpanm Term::ReadKey
 RUN cpanm DBD::Pg
 
-COPY ./easy_gdb_apache.conf /etc/apache2/sites-enabled/000-default.conf
-
 
 # Needed for JBrowse
 RUN cpanm local::lib
 RUN cpanm PerlIO::gzip
-RUN apt-get install libhash-merge-perl libjson-xs-perl libjson-perl liblist-moreutils-perl libperlio-gzip-perl libparse-recdescent-perl liblocal-lib-perl libxml-parser-perl libbio-perl-perl -y
+#RUN apt-get install libhash-merge-perl libjson-xs-perl libjson-perl liblist-moreutils-perl libperlio-gzip-perl libparse-recdescent-perl liblocal-lib-perl libxml-parser-perl libbio-perl-perl -y
 CMD ["apache2-foreground"]
