@@ -15,6 +15,7 @@ RUN apt-get install vim -y
 RUN apt-get install less -y
 RUN apt-get install wget -y
 RUN apt-get install zip -y
+RUN apt-get install tabix -y
 
 RUN apt-get install cpanminus -y
 RUN cpanm DBI
