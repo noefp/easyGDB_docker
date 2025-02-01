@@ -1,0 +1,3 @@
+[["gene1.1","gene1.1"],"egdb_gene_models","gene1.1","Chr1",1249,3000]
+[["gene2.1","gene2.1"],"egdb_gene_models","gene2.1","Chr1",3249,6200]
+[["gene3.1","gene3.1"],"egdb_gene_models","gene3.1","Chr1",7099,10000]

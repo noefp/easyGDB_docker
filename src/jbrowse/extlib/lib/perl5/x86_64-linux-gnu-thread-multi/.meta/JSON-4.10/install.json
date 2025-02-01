@@ -1,0 +1,1 @@
+{"version":"4.10","pathname":"I/IS/ISHIGAKI/JSON-4.10.tar.gz","name":"JSON","dist":"JSON-4.10","target":"JSON","provides":{"JSON":{"file":"lib/JSON.pm","version":"4.10"},"JSON::Backend::PP":{"file":"lib/JSON.pm","version":"4.10"}}}
