@@ -11,7 +11,7 @@ cd easyGDB_docker
 ```
 ### Step 3:
 ```
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
 ```
 ### Step 4:
 ```
