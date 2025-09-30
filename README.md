@@ -15,5 +15,9 @@ git submodule update --init --recursive --remote
 ```
 ### Step 4:
 ```
+git checkout main
+```
+### Step 5:
+```
 docker compose up -d
 ```
