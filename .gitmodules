@@ -1,4 +1,0 @@
-[submodule "src/easy_gdb"]
-	path = src/easy_gdb
-	url = https://github.com/noefp/easy_gdb.git
-	branch = main

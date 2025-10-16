@@ -7,17 +7,14 @@ git clone https://github.com/noefp/easyGDB_docker.git
 ```
 ### Step 2:
 ``` 
-cd easyGDB_docker
+cd easyGDB_docker/src
 ```
 ### Step 3:
 ```
-git submodule update --init --recursive --remote
+git clone https://github.com/noefp/easy_gdb.git
 ```
 ### Step 4:
 ```
-git checkout main
-```
-### Step 5:
-```
 docker compose up -d
 ```
+
