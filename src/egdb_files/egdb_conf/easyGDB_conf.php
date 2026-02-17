@@ -11,7 +11,7 @@ $custom_text_path = "$root_path/$egdb_files_folder/egdb_custom_text";
 $downloads_path = "downloads";
 $annotations_path = "$root_path/annotations";
 $blast_dbs_path = "$root_path/blast_dbs";
-$lookup_path = "$root_path/lookup"; //from root 
+$lookup_path = "$root_path/lookup";   //from root 
 $species_path = "$root_path/$egdb_files_folder/egdb_species";
 $lab_path = "$root_path/$egdb_files_folder/egdb_labs";
 $json_files_path = "$root_path/$egdb_files_folder/json_files";
@@ -51,47 +51,60 @@ $file_database = 1;
 $rm_jb_frame = 1;
 
 //*** Toolbar configuration ***//
-$tb_custom = 0;            // enable custom toolbar
-$tb_rm_home = 0;  
-$tb_downloads = 1;         // enable the downloads in the toolbar
-$tb_species = 1;           // enable the species in the toolbar
-$tb_search_box = 0;        // enable the search box in the toolbar (this is different from the search tool in the tools dropdown, which is enabled with $tb_search)
-$tb_help = 1;              // enable the help in the toolbar
-$tb_more = 0;              // enable the more in the toolbar
-$tb_private = 0;           // enable the private links in the toolbar
+$tb_custom = 0;            // enable/disable custom toolbar
+$tb_rm_home = 0;           // to remove the site title, so you can create your own
+
+$tb_downloads = 1;         // enable/disable "Downloads" in the toolbar
+$tb_species = 1;           // enable/disable "Species" in the toolbar
+$tb_search_box = 0;        // enable/disable "Search box" in the toolbar (this is different from the search tool in the tools dropdown, which is enabled with $tb_search)
+$tb_help = 1;              // enable/disable "Help" in the toolbar
+$tb_more = 0;              // enable/disable "More" in the toolbar
+$tb_private = 0;           // enable/disable "Private" links in the toolbar
 
 //*** Tools secction ***//
-$tb_tools = 1;            // enable the tools dropdown in the toolbar
-$tb_search = 1;           // enable the search tool in the tools dropdown
-$tb_blast = 1;            // enable the BLAST tool in the tools dropdown
-$tb_jbrowse = 1;          // enable the JBrowse link in the tools dropdown. This assumes you have JBrowse installed and setup at /jbrowse
-$tb_jbrowse2 = 1;         // enable the JBrowse synteny viewer link in the tools dropdown. This assumes you have a synteny viewer setup at /jbrowse2
-$tb_seq_ext = 1;          // enable the sequence extraction tool in the tools dropdown
-$tb_annot_ext = 1;        // enable the annotation extraction tool in the tools dropdown
-$tb_lookup = 1;           // enable the gene version lookup tool in the tools dropdown
-$tb_enrichment = 0;       // enable the gene set enrichment tool in the tools dropdown
+$tb_tools = 1;            // enable/disable "Tools" dropdown in the toolbar
+$tb_search = 1;           // enable/disable "Search" tool in the tools dropdown
+$tb_blast = 1;            // enable/disable "BLAST" tool in the tools dropdown
+$tb_jbrowse = 1;          // enable/disable "JBrowse" link in the tools dropdown. This assumes you have JBrowse installed and setup at /jbrowse
+$tb_jbrowse2 = 1;         // enable/disable "JBrowse synteny" viewer link in the tools dropdown. This assumes you have a synteny viewer setup at /jbrowse2
+$tb_seq_ext = 1;          // enable/disable "Sequence extraction" tool in the in the toolbar
+$tb_annot_ext = 1;        // enable/disable "Annotation extraction" tool in the toolbar
+$tb_lookup = 1;           // enable/disable "Gene version lookup" tool in the toolbar
+$tb_enrichment = 0;       // enable/disable "Gene set enrichment" tool in the toolbar
 
 //*** Gene expression atlas secction***//
-$tb_gene_expr = 1;        // enable gene expression tools dropdown in the toolbar
-$tb_expr_viewer = 1;      // enable gene expression viewer tool
-$tb_expr_comparator = 1;  // enable gene expression comparator tool
-$tb_cv_calculator = 1;    // enable CV calculator tool
-$tb_expr_datasets = 1;    // enable datasets information page
-$expr_menu = 1;           // enable a "Dataset Information" link in the expression tools (viewer and comparatos) that displays all dataset descriptions
-$comparator_lookup = 0;   // enable the gene version lookup checkbox in the expression comparator
+$tb_gene_expr = 1;        // enable/disable "Gene expression tools" dropdown in the toolbar
+$tb_expr_viewer = 1;      // enable/disable "Gene expression viewer" tool in the toolbar
+$tb_expr_comparator = 1;  // enable/disable "Gene expression comparator" tool in the toolbar
+$tb_cv_calculator = 1;    // enable/disable "CV calculator" tool in the toolbar
+$tb_expr_datasets = 1;    // enable/disable "Datasets information"page in the toolbar
+$expr_menu = 1;           // enable/disable a "Dataset Information" link in the expression tools (viewer and comparatos) that displays all dataset descriptions
+$comparator_lookup = 1;   // enable/disable the gene version lookup checkbox in the expression comparator
+/* -------------------------------------------------------------------------------------------------------------------------------------------------
+  NOTE: 
+  - If $tb_gene_expr = 1 and the individual activation variables ($tb_expr_viewer, $tb_expr_comparator, $tb_cv_calculator, $tb_expr_datasets)
+     are not defined (variables do not exist),
+        → The expression tool not defined (viewer, comparator, CV calculator, datasets page) are enabled by default.
+  - To disable any specific expression tool, set its variable to 0. Do NOT remove the variable.
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 //*** Passport and Phenotype secction ***//
-$tb_passport = 1;         // enable passport and phenotype dropdown in the toolbar
-$tb_navigation = 1;       // enable the navigation section in the passport
-$tb_search_passport = 1; // enable the search section in the passport
-$show_map = 1;            // enable the map in the passport
-$show_qr = 1;             // enable the QR code in the passport
+$tb_passport = 1;         // enable "Passport and phenotype" dropdown in the toolbar. 
+$tb_navigation = 1;       // enable/disable "Navigation" section in the passport toolbar
+$tb_search_passport = 1;  // enable/disable "Search" section in the passport toolbar
+$show_map = 1;            // enable/disabe the map in the passport
+$show_qr = 1;             // enable/disable the QR code in the passport
+/* -------------------------------------------------------------------------------------------------------------------------------------------------
+  NOTE: 
+  - If $tb_passport = 1 and the individual activation variables ($tb_navigation, $tb_search_passport) are not defined (variables do not exist),
+        → The passport and phenotype tool not defined (navigation, search) are enabled by default.
+  - To disable any specific passport and phenotype tool, set its variable to 0. Do NOT remove the variable.
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 //*** About *** // 
-$tb_about = 1;          // enable the about dropdown in the toolbar 
+$tb_about = 1;          // enable "about" dropdown in the toolbar 
 $ab_citation = 1;       // enable the citation section in the about page
 $ab_labs = 1;  
-
 
 
 /******************************************************************************/
