@@ -91,6 +91,7 @@ $comparator_lookup = 1;   // Enable/disable the gene version lookup checkbox in 
 $tb_passport = 1;         // Enable/disable "Passport and phenotype" dropdown on the toolbar. 
 $tb_navigation = 1;       // Enable/disable "Navigation" tool in the Passport and phenotype dropdown.
 $tb_search_passport = 1;  // Enable/disable "Search" tool in the Passport and phenotype dropdown. 
+$tb_phen_ex = 1;          // Enable/disable "Phenotype extraction" tool in the Passport and phenotype dropdown
 $show_map = 1;            // Enable/disable the map in the passport and phenotype output.
 $show_qr = 1;             // Enable/disable the QR code in the passport and phenotype output.
 /* -------------------------------------------------------------------------------------------------------------------------------------------------
