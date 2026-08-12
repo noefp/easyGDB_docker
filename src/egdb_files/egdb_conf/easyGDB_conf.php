@@ -23,8 +23,13 @@ $custom_css_path = "$egdb_files_folder/css/custom.css";
 $expression_path = "$root_path/expression_data";
 $private_expression_path = "$root_path/private_expression_data";
 
+//Coexpression
+$coexpression_path = "$root_path/coexpression_data";
+
 // Passport
 $passport_path = "$root_path/passport/example";
+
+
 
 
 /******************************************************************************/
@@ -67,6 +72,7 @@ $tb_blast = 1;            // Enable/disable the "BLAST" tool in the Tools dropdo
 $tb_jbrowse = 1;          // Enable/disable the "JBrowse" link in the Tools dropdown. This assumes you have JBrowse installed and setup at /jbrowse.
 $tb_jbrowse2 = 1;         // Enable/disable the "JBrowse synteny" viewer link in the Tools dropdown. This assumes you have a synteny viewer setup at /jbrowse2.
 $tb_seq_ext = 1;          // Enable/disable the "Sequence extraction" tool in the Tools dropdown.
+$tb_seq_exp = 0;          // Enable/disable the "Sequence explorer" tool in the Tools dropdown
 $tb_annot_ext = 1;        // Enable/disable the "Annotation extraction" tool in the Tools dropdown.
 $tb_lookup = 1;           // Enable/disable the "Gene version lookup" tool in the Tools dropdown.
 $tb_enrichment = 0;       // Enable/disable the "Gene set enrichment" tool in the Tools dropdown.
@@ -75,8 +81,10 @@ $tb_enrichment = 0;       // Enable/disable the "Gene set enrichment" tool in th
 $tb_gene_expr = 1;        // Enable/disable "Gene expression" tools dropdown on the toolbar.
 $tb_expr_viewer = 1;      // Enable/disable "Gene expression viewer" tool in the Gene expression dropdown.
 $tb_expr_comparator = 1;  // Enable/disable "Gene expression comparator" tool in the Gene expression dropdown.
-$tb_cv_calculator = 1;    // Enable/disable "CV calculator" tool in the Gene expression dropdown.
+$tb_cv_calculator = 1;    // Enable/disable "Coefficient of variation" tool in the Gene expression dropdown.
 $tb_expr_datasets = 1;    // Enable/disable "Datasets information" page in the Gene expression dropdown.
+$tb_coexpr = 0;            // Enable/disable "Coexpression search" tool in the Gene expression dropdown.
+
 $expr_menu = 1;           // Enable/disable a "Dataset Information" link in the expression tools (viewer and comparator) that displays all dataset descriptions.
 $comparator_lookup = 1;   // Enable/disable the gene version lookup checkbox in the expression comparator.
 /* -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -92,6 +100,7 @@ $tb_passport = 1;         // Enable/disable "Passport and phenotype" dropdown on
 $tb_navigation = 1;       // Enable/disable "Navigation" tool in the Passport and phenotype dropdown.
 $tb_search_passport = 1;  // Enable/disable "Search" tool in the Passport and phenotype dropdown. 
 $tb_phen_ex = 1;          // Enable/disable "Phenotype extraction" tool in the Passport and phenotype dropdown
+
 $show_map = 1;            // Enable/disable the map in the passport and phenotype output.
 $show_qr = 1;             // Enable/disable the QR code in the passport and phenotype output.
 /* -------------------------------------------------------------------------------------------------------------------------------------------------
